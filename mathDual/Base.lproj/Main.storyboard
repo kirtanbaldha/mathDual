@@ -11,7 +11,7 @@
         <!--Starting Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="startingPage" customModule="mathDual" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="startingPage" id="BYZ-38-t0r" customClass="startingPage" customModule="mathDual" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,17 +72,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modePage" translatesAutoresizingMaskIntoConstraints="NO" id="kgt-WU-8KK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="modePage" translatesAutoresizingMaskIntoConstraints="NO" id="kgt-WU-8KK">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="852" id="gLb-sI-ciV"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgw-VT-XCD">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgw-VT-XCD">
                                 <rect key="frame" x="60" y="225" width="280" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="L8N-Pt-7dn"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Easy">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
@@ -92,11 +88,9 @@
                                     <action selector="easyButton:" destination="gMI-q4-f5w" eventType="touchUpInside" id="qeC-6k-B79"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45d-YS-ciQ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45d-YS-ciQ">
                                 <rect key="frame" x="60" y="344" width="280" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="gA6-PC-WRp"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Medium">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
@@ -106,11 +100,9 @@
                                     <action selector="mediumButton:" destination="gMI-q4-f5w" eventType="touchUpInside" id="bGg-1s-KFg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg4-fl-Ev4">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg4-fl-Ev4">
                                 <rect key="frame" x="60" y="458" width="280" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="D0S-gN-y4k"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Hard">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
@@ -123,21 +115,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BKJ-5i-js0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="BKJ-5i-js0" firstAttribute="trailing" secondItem="zg4-fl-Ev4" secondAttribute="trailing" constant="53" id="1de-Zl-EG9"/>
-                            <constraint firstItem="kgw-VT-XCD" firstAttribute="leading" secondItem="BKJ-5i-js0" secondAttribute="leading" constant="60" id="60n-OW-4aU"/>
-                            <constraint firstItem="kgt-WU-8KK" firstAttribute="leading" secondItem="BKJ-5i-js0" secondAttribute="leading" id="8Y5-Un-2gN"/>
-                            <constraint firstAttribute="bottom" secondItem="kgt-WU-8KK" secondAttribute="bottom" id="AxL-lN-rsN"/>
-                            <constraint firstItem="kgt-WU-8KK" firstAttribute="top" secondItem="EHd-h1-wah" secondAttribute="top" id="IE8-01-4o3"/>
-                            <constraint firstItem="zg4-fl-Ev4" firstAttribute="leading" secondItem="BKJ-5i-js0" secondAttribute="leading" constant="60" id="Tgs-Bb-AfK"/>
-                            <constraint firstItem="kgw-VT-XCD" firstAttribute="top" secondItem="BKJ-5i-js0" secondAttribute="top" constant="166" id="UxC-Gp-Jrl"/>
-                            <constraint firstItem="kgt-WU-8KK" firstAttribute="trailing" secondItem="BKJ-5i-js0" secondAttribute="trailing" id="VtL-Si-DL5"/>
-                            <constraint firstItem="BKJ-5i-js0" firstAttribute="trailing" secondItem="kgw-VT-XCD" secondAttribute="trailing" constant="53" id="aRA-G2-cmR"/>
-                            <constraint firstItem="zg4-fl-Ev4" firstAttribute="top" secondItem="45d-YS-ciQ" secondAttribute="bottom" constant="43" id="bTF-hS-5fe"/>
-                            <constraint firstItem="45d-YS-ciQ" firstAttribute="leading" secondItem="BKJ-5i-js0" secondAttribute="leading" constant="60" id="etW-LC-crJ"/>
-                            <constraint firstItem="45d-YS-ciQ" firstAttribute="top" secondItem="kgw-VT-XCD" secondAttribute="bottom" constant="48" id="fzA-p9-Sh8"/>
-                            <constraint firstItem="BKJ-5i-js0" firstAttribute="trailing" secondItem="45d-YS-ciQ" secondAttribute="trailing" constant="53" id="qPO-Hn-Xmx"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="easy" destination="kgw-VT-XCD" id="Riz-wL-85l"/>

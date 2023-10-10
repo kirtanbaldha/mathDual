@@ -34,14 +34,13 @@ class finalPage: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         pg.progress = 1.0
-        Progress()
         genret()
         buttonInText()
         scoreLbSet()
         scorUpdate()
         scor = point
         self.scorUpdate()
-        
+        pro()
         
     }
     func pro(){
@@ -67,14 +66,17 @@ class finalPage: UIViewController {
         }))
         alert.addAction(UIAlertAction(title: "restart", style: .default, handler: { _ in
             self.pg.progress
+            self.viewDidLoad()
+            
         }))
         present(alert, animated: true)
     }
     
     func navigation(){
         let navigate = storyboard?.instantiateViewController(withIdentifier: "startingPage") as! startingPage
-        navigationController?.popViewController(animated: false)
+        navigationController?.popViewController(animated: true)
     }
+   
     
     func scoreLbSet(){
         scoreLabel.layer.cornerRadius = 10
@@ -113,7 +115,6 @@ class finalPage: UIViewController {
         if let str = sender.currentTitle,let intData = Int(str),ans == intData{
             scor = scor + 1
             scoreLabel.text = "\(scor)"
-            Progress()
             self.genret()
             buttonInText()
             null = 0
